@@ -1,0 +1,114 @@
+/* Custom CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin-right: 20px;
+    margin-left: 45px;
+    padding: 0;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  /* Additional custom styles can be added here */
+  body {
+    background-color: #f8f9fa;
+  }
+  
+  .form-control {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .container label {
+    font-weight: bold;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3e3c3c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+    /* Increase the margin-top value to create more space */
+  }
+  
+  .container {
+    margin-bottom: 80px;
+    /* Increase the margin-bottom value to create more space */
+  }
+  
+  /* Additional Styles for Generated Boxes */
+
+  
+  h1 {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .card {
+    margin-top: 2rem;
+  }
+  
+  .card-title {
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .card-title.expanded {
+    color: #28a745;
+  }
+  
+  .post-box,
+  .hashtags-box,
+  .caption-box {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .post-box:hover,
+  .hashtags-box:hover,
+  .caption-box:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .post-box h5,
+  .hashtags-box h5,
+  .caption-box h5 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .post-box{
+    background-color: #f8f9fa;
+
+  }
+  
+  .hashtags-box {
+    background-color: #f8f9fa;
+  }
+  
+  .caption-box {
+    background-color: #fff;
+  }
+  
+  .card .btn-copy {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  

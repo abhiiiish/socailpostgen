@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- nav section-->
+
+<div class="container mt-4">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#post">
+        <i class="fas fa-edit"></i> Post</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#hashtags">
+        <i class="fas fa-hashtag"></i> Hashtags</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#caption">
+        <i class="fas fa-comment-alt"></i> Caption</a>
+    </li>
+  </ul>
+
+  <!-- tab section-->
+  <div class="tab-content">
+    <div id="post" class="tab-pane fade show active">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">
+            Post
+          </h5>
+          <div class="post-box">
+            <p class="card-text">{{ post }}</p>
+          </div>
+          <button class="btn btn-sm btn-copy" onclick="copyToClipboard('#post .card-text')">
+            <i class="far fa-copy"></i> Copy
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <div id="hashtags" class="tab-pane fade">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">
+            Hashtags
+          </h5>
+          <div class="hashtags-box">
+            <p class="card-text">{{ hashtags }}</p>
+          </div>
+          <button class="btn btn-sm btn-copy" onclick="copyToClipboard('#hashtags .card-text')">
+            <i class="far fa-copy"></i> Copy
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <div id="caption" class="tab-pane fade">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">
+            Caption
+          </h5>
+          <div class="caption-box">
+            <p class="card-text">{{ caption }}</p>
+          </div>
+          <button class="btn btn-sm btn-copy" onclick="copyToClipboard('#caption .card-text')">
+            <i class="far fa-copy"></i> Copy
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function copyToClipboard(elementSelector) {
+    const element = document.querySelector(elementSelector);
+    const range = document.createRange();
+    range.selectNode(element);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+  }
+</script>
+
+<script>
+  $(document).ready(function() {
+    // Add click event listener to expand/collapse boxes
+    $('.card-title').on('click', function() {
+      $(this).siblings('.card-text').slideToggle();
+      $(this).toggleClass('expanded');
+    }); 
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- result section-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% endblock %}
+
+
+

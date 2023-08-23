@@ -1,0 +1,11 @@
+click
+Flask
+itsdangerous
+Jinja2
+MarkupSafe
+openai
+Werkzeug
+gunicorn
+python-dotenv
+pillow
+flask-cors

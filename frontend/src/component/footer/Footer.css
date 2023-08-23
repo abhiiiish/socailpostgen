@@ -1,0 +1,53 @@
+
+.logo {
+    width: 160px; 
+  }
+  .footer{
+    background-color: #404040 !important;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  .social-icons a{
+    border-radius: 50%;
+    border-color: rgb(199, 30, 30);
+  }
+  .social-icons a i {
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+ 
+  .footer-links ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .list-unstyled li a{
+    font-size: 16px !important;
+    color: white !important;
+    font-weight: 500;
+  }
+  .email, .number{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+  
+
+  
